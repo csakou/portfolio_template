@@ -559,11 +559,11 @@ ul {
 }
 
 .dbl-border:hover::before {
-  animation: top-border .5s linear forwards;
+  animation: top-border .25s linear forwards;
 }
 
 .dbl-border:hover::after {
-  animation: bottom-border .5s linear forwards;
+  animation: bottom-border .25s linear forwards;
 }
 
 @keyframes top-border {
