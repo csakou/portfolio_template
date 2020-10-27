@@ -31,7 +31,7 @@ function scrollFunction() {
 function setDocForBigScreens() {
         window.onscroll = function() {scrollFunction()};
         
-        document.getElementById("navbar").style.opacity = 1;
+        document.getElementById("navbar").style.top = 0;
         document.getElementById("nav-button").classList.remove("nav-button");
         document.getElementById("nav-button").classList.remove("nav-button-active");
         
@@ -51,7 +51,7 @@ function setDocForBigScreens() {
 function setDocForSmallScreens() {
     window.onscroll = function() {};
 
-    document.getElementById("navbar").style.opacity = 0;
+    document.getElementById("navbar").style.top = -9999;
     document.getElementById("navbar").classList.remove("nav-scrolled");
     document.getElementById("nav-button").classList.add("nav-button");
 
@@ -75,7 +75,7 @@ function navButtonFunction() {
     let promise = Promise.resolve();
 
     if (nav_button_active === false) {
-        document.getElementById("navbar").style.opacity = 1;
+        document.getElementById("navbar").style.top = 0;
         document.getElementById("nav-button").classList.add("nav-button-active");
         
         for (let i=0; i < nav_items_list.length; i++) {
@@ -90,7 +90,7 @@ function navButtonFunction() {
         nav_button_active = true;
     }
     else {
-        document.getElementById("navbar").style.opacity = 0;
+        document.getElementById("navbar").style.top = -9999;
         document.getElementById("nav-button").classList.remove("nav-button-active");
 
         for (let i=nav_items_list.length-1; i >= 0; i--) {
