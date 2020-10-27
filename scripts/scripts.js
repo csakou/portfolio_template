@@ -32,6 +32,8 @@ function setDocForBigScreens() {
         window.onscroll = function() {scrollFunction()};
         
         document.getElementById("navbar").style.opacity = 1;
+        document.getElementById("nav-button").classList.remove("nav-button");
+        document.getElementById("nav-button").classList.remove("nav-button-active");
         
         nav_button_active = false;
 
@@ -51,6 +53,7 @@ function setDocForSmallScreens() {
 
     document.getElementById("navbar").style.opacity = 0;
     document.getElementById("navbar").classList.remove("nav-scrolled");
+    document.getElementById("nav-button").classList.add("nav-button");
 
     for (let i=nav_items_list.length-1; i >= 0; i--) {
         nav_items_list[i].style.opacity = 0;

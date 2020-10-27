@@ -211,6 +211,10 @@ ul {
 }
 
 /* navbar styling start */
+#nav-button {
+  display: none;
+}
+
 #navbar {
   top: 0;
   left: 0;
