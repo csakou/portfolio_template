@@ -629,9 +629,7 @@ ul {
     font-weight: 400;
     color: var(--main-lightblue);
     text-shadow:  0 0 10px var(--main-lightblue),
-                  0 0 20px var(--main-lightblue),
-                  0 0 40px var(--main-lightblue),
-                  0 0 80px var(--main-lightblue);
+                  0 0 20px var(--main-lightblue);
 }
   
 .tech-list {
@@ -680,9 +678,7 @@ ul {
     color: var(--main-lightblue);
     background: var(--gunmetal-gray);
     text-shadow:  0 0 10px var(--main-lightblue),
-                  0 0 20px var(--main-lightblue),
-                  0 0 40px var(--main-lightblue),
-                  0 0 80px var(--main-lightblue);
+                  0 0 20px var(--main-lightblue);
 }
 
 .project-button:focus {
@@ -697,9 +693,7 @@ ul {
     color: var(--main-black);
     background: var(--main-neonlightblue);
     box-shadow: 0 0 10px var(--main-neonlightblue),
-                0 0 20px var(--main-neonlightblue),
-                0 0 40px var(--main-neonlightblue),
-                0 0 80px var(--main-neonlightblue);
+                0 0 20px var(--main-neonlightblue);
     
 }
 
