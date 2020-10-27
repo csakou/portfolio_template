@@ -442,14 +442,15 @@ ul {
 
 #navbar {
     left: 0;
-    height: 100%;
-    width: 150px;
+    width: 100%;
+    height: 70px;
     display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -moz-box;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
     transition: all .5s;
     background: var(--matte-black);
@@ -458,7 +459,7 @@ ul {
 }
 
 .nav {
-    border: 2px inset var(--main-lightblue);
+    border: 1px solid var(--main-gray);
 }
 
 .nav-list {
@@ -467,7 +468,7 @@ ul {
     display: -ms-flexbox;
     display: -moz-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -482,12 +483,15 @@ ul {
 .nav-item {
     cursor: pointer;
     position: relative;
+    padding: 5px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
     transition: 0.5s;
     transition-delay: 0.5s;
     -webkit-transition: .5s;
     -webkit-transition-delay: .5s;
+    border: 2px solid var(--main-gray);
 }
 
 /* about section styling start */
