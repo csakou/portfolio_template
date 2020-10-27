@@ -381,9 +381,7 @@ ul {
   font-weight: 400;
   color: var(--main-lightblue);
   text-shadow:  0 0 10px var(--main-lightblue),
-                0 0 20px var(--main-lightblue),
-                0 0 40px var(--main-lightblue),
-                0 0 80px var(--main-lightblue);
+                0 0 20px var(--main-lightblue);
 }
 
 .tech-list {
