@@ -624,7 +624,7 @@ ul {
     position: relative;
     border-radius: 5px;
     background: var(--gunmetal-gray);
-    box-shadow: 0px 10px 10px 5px var(--main-black);
+    box-shadow: 0px 0 20px 5px var(--main-black);
     overflow: hidden;
     display: -webkit-flex;
     display: -webkit-box;
@@ -730,9 +730,9 @@ ul {
     font-size: 1.7rem;
     font-weight: 700;
     background: var(--main-gray);
-    border: 2px inset var(--main-lightblue);
+    border: 1px solid var(--main-lightblue);
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     opacity: 0;
 }
 
@@ -793,7 +793,8 @@ ul {
     -o-transition: height .5s;
     transition: height .5s;
     height: 500px;
-    border: 1px solid var(--main-lightblue);
+    box-shadow: 0 0 20px 5px var(--main-neonlightblue),
+                0 0 20px 10px var(--main-lightblue);
 }
   
 .project-tile-open .project-info {
