@@ -651,10 +651,13 @@ ul {
     flex-direction: column;
     transform: translateY(-90px);
 }
-  
-.project-img {
+
+.project-tile img {
     width: 100%;
     height: 220px;
+}
+
+.project-img {
     margin: 0 0 20px 0;
     justify-self: flex-start;
     border-radius: 5px;
@@ -895,9 +898,12 @@ ul {
     align-items: space-between;
 }
 
-.social-link {
+.social-links img{
     width: 28px;
     height: 28px;
+}
+
+.social-link {
     margin: 10px 5px 10px 5px;
     -webkit-transition: .3s;
     -moz-transition: .3s;
