@@ -220,7 +220,10 @@ ul {
   left: 0;
   position: sticky;
   overflow: hidden;
-  transition: all .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   background: var(--main-black);
   z-index: 99999;
 }
@@ -251,7 +254,14 @@ ul {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .5s;
+  -moz-transition-delay: .5s;
+  -o-transition-delay: .5s;
+  transition-delay: .5s;
   border-left: 1px solid var(--main-gray);
 }
 
@@ -292,11 +302,12 @@ ul {
 
 /* projects section styling start */
 .projects-section {
+  
+  padding: 10rem 2rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-items: center;
-  padding: 10rem 2rem;
+  flex-direction: column;
   background: var(--matte-black);
   z-index: 10;
 }
@@ -306,16 +317,21 @@ ul {
   margin: 0 20px 0 20px;
   border-bottom: 2px solid var(--main-lightblue);
   font-weight: 700;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
 }
 
 .projects-scroll-box {
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto;
   grid-auto-columns: 425px 425px;
   grid-auto-rows: 550px;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-evenly;
+  align-content: space-evenly;
   min-width: 800px;
   background: var(--matte-black);
   z-index: 50;
@@ -327,7 +343,8 @@ ul {
 }
 
 .project-tile {
-  width: 400px;
+  min-width: 350px;
+  max-width: 400px;
   height: 280px;
   margin: 50px 20px 0 0;
   border-radius: 5px;
@@ -445,8 +462,9 @@ ul {
   -moz-transition: height .5s;
   -o-transition: height .5s;
   transition: height .5s;
-  height: 480px;
-  border: 1px solid var(--main-lightblue);
+  height: 500px;
+  box-shadow: 0 0 20px 5px var(--main-neonlightblue),
+              0 0 20px 10px var(--main-lightblue);
 }
 
 .project-tile:hover .project-info {
