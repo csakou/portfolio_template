@@ -443,7 +443,7 @@ ul {
     font-size: 1.7rem;
     font-weight: 700;
     background: var(--main-gray);
-    border: 2px inset var(--main-lightblue);
+    border: 2px solid var(--main-lightblue);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     opacity: 0;
