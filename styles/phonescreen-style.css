@@ -1,3 +1,16 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
