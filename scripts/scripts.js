@@ -8,7 +8,6 @@ let project_active_buttons = [];
 
 function initDoc() {
     window.onresize = function() {responsiveScrollFunction()};
-    console.log(1);
     nav_items_list = document.getElementsByClassName("nav-item");
     project_list = document.getElementsByClassName("project-tile");
     project_buttons_list = document.getElementsByClassName("project-button");
