@@ -554,6 +554,7 @@ ul {
 
 /* projects section styling start */
 .projects-section {
+    width: 100%;
     display: -webkit-flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -579,7 +580,7 @@ ul {
 }
 
 .projects-scroll-box {
-    width: 300px;
+    width: 100%;
     min-height: 500px;
     padding: 4rem;
     display: -webkit-flex;
@@ -616,7 +617,8 @@ ul {
 }
 
 .project-tile {
-    width: 280px;
+    min-width: 280px;
+    max-width: 320px;
     height: 280px;
     margin: 50px 20px 0 0;
     position: relative;
@@ -636,8 +638,9 @@ ul {
 
 .project-tile hr {
     width: 100%;
-    background: transparent;
-    border-bottom: 1px solid var(--main-lightblue);
+    height: 1px;
+    border: none;
+    background: var(--main-lightblue);
 }
 
 .project-info {
@@ -654,14 +657,14 @@ ul {
 
 .project-tile img {
     width: 100%;
-    height: 220px;
+    min-height: 220px;
+    margin: 0 0 20px 0;
 }
 
 .project-img {
-    margin: 0 0 20px 0;
     justify-self: flex-start;
     border-radius: 5px;
-    box-shadow: 0 0 10px 5px var(--main-black);
+    box-shadow: 0 0 15px 10px var(--main-black);
 }
   
 .project-title {
@@ -703,7 +706,8 @@ ul {
 .project-description {
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
     text-align: center;
     opacity: 0;
 }
@@ -741,10 +745,10 @@ ul {
 }
 
 .project-button {
-    top: 10;
-    right: 10;
+    align-self: flex-end;
     width: 50px;
     height: 50px;
+    margin: 10px 10px 0 0;
     font-size: 40px;
     position: absolute;
     border: none;
