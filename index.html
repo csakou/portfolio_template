@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Sakoumpentas Christos</title>
@@ -8,7 +9,7 @@
   </head>
   <body>
     <!-- START NAV -->
-    <button id="nav-button" class="nav-button" onclick="navButtonFunction()">
+    <button id="nav-button" class="nav-button" name="navigation-button" onclick="navButtonFunction()">
       <span></span>
       <span></span>
       <span></span>
@@ -16,13 +17,13 @@
     <nav id="navbar" class="nav">
       <ul class="nav-list">
         <li>
-          <a class="nav-item" href="#about-section">ABOUT</a>
+          <a class="nav-item" name="about-section-anchor" href="#about-section">ABOUT</a>
         </li>
         <li>
-          <a class="nav-item" href="#projects">PROJECTS</a>
+          <a class="nav-item" name="projects-section-anchor" href="#projects">PROJECTS</a>
         </li>
         <li>
-          <a class="nav-item" href="#info">CONTACT</a>
+          <a class="nav-item" name="contact-section-anchor" href="#info">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -38,7 +39,7 @@
       <h2 class="projects-header">Personal Projects</h2>
       <div class="projects-scroll-box">
         <div class="project-tile">
-          <button class="project-button" onclick="projectButtonFunction('1')">&darr;</button>
+          <button class="project-button" name="phone-project-animation-button" onclick="projectButtonFunction('1')">&darr;</button>
           <img class="project-img" src="assets/portfolio-website.png" alt="project1"/>
           <div class="project-info">
             <ul class="tech-list">
@@ -55,12 +56,12 @@
           </div>
           <hr />
           <div class="project-links">
-            <a class="code-link" href="https://www.github.com/csakou/portfolio_template" target="_blank">CODE</a>
-            <a class="project-link" href="https://csakou.github.io/portfolio_template/" target="_blank">PROJECT</a>
+            <a class="code-link" name="link-to-code-repository" href="https://www.github.com/csakou/portfolio_template" target="_blank">CODE</a>
+            <a class="project-link" name="link-to-projects-site" href="https://csakou.github.io/portfolio_template/" target="_blank">PROJECT</a>
           </div>
         </div>
         <div class="project-tile">
-          <button class="project-button" onclick="projectButtonFunction('2')">&darr;</button>
+          <button class="project-button" name="phone-project-animation-button" onclick="projectButtonFunction('2')">&darr;</button>
           <img class="project-img" src="" alt="project2"/>
           <div class="project-info">
             <ul class="tech-list">
@@ -75,12 +76,12 @@
           </div>
           <hr />
           <div class="project-links">
-            <a class="code-link" href="" target="_blank">CODE</a>
-            <a class="project-link" href="" target="_blank">PROJECT</a>
+            <a class="code-link" name="link-to-code-repository" href="" target="_blank">CODE</a>
+            <a class="project-link" name="link-to-projects-site" href="" target="_blank">PROJECT</a>
           </div>
         </div>
         <div class="project-tile">
-          <button class="project-button" onclick="projectButtonFunction('3')">&darr;</button>
+          <button class="project-button" name="phone-project-animation-button" onclick="projectButtonFunction('3')">&darr;</button>
           <img class="project-img" src="" alt="project3"/>
           <div class="project-info">
             <ul class="tech-list">
@@ -95,12 +96,12 @@
           </div>
           <hr />
           <div class="project-links">
-            <a class="code-link" href="" target="_blank">CODE</a>
-            <a class="project-link" href="" target="_blank">PROJECT</a>
+            <a class="code-link" name="link-to-code-repository" href="" target="_blank">CODE</a>
+            <a class="project-link" name="link-to-projects-site" href="" target="_blank">PROJECT</a>
           </div>
         </div>
         <div class="project project-tile">
-          <button class="project-button" onclick="projectButtonFunction('4')">&darr;</button>
+          <button class="project-button" name="phone-project-animation-button" onclick="projectButtonFunction('4')">&darr;</button>
           <img class="project-img" src="" alt="project4"/>
           <div class="project-info">
             <ul class="tech-list">
@@ -115,8 +116,8 @@
           </div>
           <hr />
           <div class="project-links">
-            <a class="code-link" href="" target="_blank">CODE</a>
-            <a class="project-link" href="" target="_blank">PROJECT</a>
+            <a class="code-link" name="link-to-code-repository" href="" target="_blank">CODE</a>
+            <a class="project-link" name="link-to-projects-site" href="" target="_blank">PROJECT</a>
           </div>
         </div>
       </div>
@@ -131,28 +132,28 @@
     <footer id="footer" class="footer">
       <div class="social-links">
         <div class="social-link">
-          <a href="https://www.github.com/csakou" alt="github-link-icon" target="_blank">
-            <img src="https://img.icons8.com/fluent/28/000000/github.png"/>
+          <a name="github-social-link" href="https://www.github.com/csakou" target="_blank">
+            <img src="https://img.icons8.com/fluent/28/000000/github.png" alt="github-icon"/>
           </a>
         </div>
         <div class="social-link">
-          <a href="https://twitter.com/C_Sakoumpentas" alt="twitter-link-icon" target="_blank">
-            <img src="https://img.icons8.com/color/28/000000/twitter-circled.png" />
+          <a name="telegram-link" href="https://twitter.com/C_Sakoumpentas" target="_blank">
+            <img src="https://img.icons8.com/color/28/000000/twitter-circled.png" alt="twitter-icon"/>
           </a>
         </div>
         <div class="social-link">
-          <a href="https://www.linkedin.com/in/christos-sakoumpentas-2b9b96172/" alt="linkedin-link-icon" target="_blank">
-            <img src="https://img.icons8.com/fluent/28/000000/linkedin-circled.png"/>
+          <a name="linked-in-link" href="https://www.linkedin.com/in/christos-sakoumpentas-2b9b96172/" target="_blank">
+            <img src="https://img.icons8.com/fluent/28/000000/linkedin-circled.png" alt="linkedin-icon"/>
           </a>
         </div>
         <div class="social-link">
-          <a href="https://t.me/C_Sak" alt="telegram-link-icon" target="_blank">
-            <img src="https://img.icons8.com/color/28/000000/telegram-app.png"/>
+          <a name="telegram-link" href="https://t.me/C_Sak" target="_blank">
+            <img src="https://img.icons8.com/color/28/000000/telegram-app.png" alt="telegram-icon"/>
           </a>
         </div>
         <div class="social-link">
-          <a href="https://codepen.io/csakou" alt="codepen-link-icon" target="_blank">
-            <img src="https://img.icons8.com/ios-filled/28/308989/codepen.png"/>
+          <a name="codepen-link" href="https://codepen.io/csakou" target="_blank">
+            <img src="https://img.icons8.com/ios-filled/28/308989/codepen.png" alt="codepen-icon"/>
           </a>
         </div>
       </div>
