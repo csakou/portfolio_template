@@ -581,7 +581,7 @@ ul {
 
 .projects-scroll-box {
     width: 100%;
-    min-height: 500px;
+    height: 100%;
     padding: 4rem;
     display: -webkit-flex;
     display: -webkit-box;
@@ -796,7 +796,7 @@ ul {
     box-shadow: 0 0 20px 5px var(--main-neonlightblue),
                 0 0 20px 10px var(--main-lightblue);
 }
-  
+
 .project-tile-open .project-info {
     transform: translateY(0);
 }
