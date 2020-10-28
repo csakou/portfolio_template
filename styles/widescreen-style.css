@@ -337,7 +337,7 @@ ul {
   margin: 50px 20px 0 0;
   border-radius: 5px;
   background: var(--matte-black);
-  box-shadow: 0px 10px 10px 5px var(--main-black);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   overflow: hidden;
   display: flex;
   align-items: center;
