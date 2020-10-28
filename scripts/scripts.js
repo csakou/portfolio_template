@@ -20,8 +20,6 @@ function initDoc() {
 
 function setDocForBigScreens() {
         document.getElementById("navbar").style.top = 0;
-        document.getElementById("nav-button").classList.remove("nav-button");
-        document.getElementById("nav-button").classList.remove("nav-button-active");
         
         nav_button_active = false;
 
