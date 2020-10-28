@@ -7,7 +7,7 @@ let project_active_buttons = [];
 
 
 function initDoc() {
-    window.onresize = function() {responsiveScrollFunction()};
+    window.onresize = function() {responsiveFunction()};
     nav_items_list = document.getElementsByClassName("nav-item");
     project_list = document.getElementsByClassName("project-tile");
     project_buttons_list = document.getElementsByClassName("project-button");
@@ -15,21 +15,10 @@ function initDoc() {
     project_active_buttons.fill(false);
     nav_button_active = false;
 
-    responsiveScrollFunction();
+    responsiveFunction();
 }
 
-function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").classList.add("nav-scrolled");
-    }
-    else {
-        document.getElementById("navbar").classList.remove("nav-scrolled");
-    }
-} 
-
 function setDocForBigScreens() {
-        window.onscroll = function() {scrollFunction()};
-        
         document.getElementById("navbar").style.top = 0;
         document.getElementById("nav-button").classList.remove("nav-button");
         document.getElementById("nav-button").classList.remove("nav-button-active");
@@ -47,56 +36,9 @@ function setDocForBigScreens() {
         }
 }
 
-function setDocForSmallScreens() {
-    window.onscroll = function() {};
-
-    document.getElementById("navbar").style.top = -9999;
-    document.getElementById("navbar").classList.remove("nav-scrolled");
-    document.getElementById("nav-button").classList.add("nav-button");
-
-    for (let i=nav_items_list.length-1; i >= 0; i--) {
-        nav_items_list[i].style.opacity = 0;
-    }
-}
-
-function responsiveScrollFunction() {
+function responsiveFunction() {
     if(window.innerWidth >= 900) {
         setDocForBigScreens();
-    }
-    
-    if(window.innerWidth < 900) {
-        setDocForSmallScreens();
-    }
-}
-
-function navButtonFunction() {
-    let interval = 100;
-    let promise = Promise.resolve();
-
-    if (nav_button_active === false) {
-        document.getElementById("navbar").style.top = 0;
-        document.getElementById("nav-button").classList.add("nav-button-active");
-        
-        for (let i=0; i < nav_items_list.length; i++) {
-            promise = promise.then(function () {
-                nav_items_list[i].style.opacity = 1;
-                return new Promise(function (resolve) {
-                    setTimeout(resolve, interval);
-                });
-            });
-        }
-
-        nav_button_active = true;
-    }
-    else {
-        document.getElementById("navbar").style.top = -9999;
-        document.getElementById("nav-button").classList.remove("nav-button-active");
-
-        for (let i=nav_items_list.length-1; i >= 0; i--) {
-            nav_items_list[i].style.opacity = 0;
-        }
-
-        nav_button_active = false;
     }
 }
 
