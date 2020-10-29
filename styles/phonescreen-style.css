@@ -297,25 +297,9 @@ body {
   background-size: cover;
 }
 
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 2rem;
-}
-h3 {
-  font-size: 1rem;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 200;
-}
-
 h1, h2 {
   font-family: 'Roboto', monospace, sans-serif;
   font-weight: 500;
-  text-align: center;
 }
 
 a {
@@ -342,16 +326,16 @@ ul {
 }
 
 .full-name {
-  flex-grow: 1;
-  font-size: 1.2rem;
+  font-size: calc(3vmin + 4*(100vw - 360px) / 360);
   font-weight: 500;
   font-family: Roboto, monospace;
+  width: 50%;
   padding: 1.5em;
 }
 
 .nav {
   width: 100vw;
-  height: 7vh;
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -363,8 +347,6 @@ ul {
 }
 
 .nav-list {
-  font-size: 1rem;
-  flex-grow: 2;
   margin-right: 50px;
   display: flex;
   align-items: center;
@@ -372,6 +354,7 @@ ul {
 }
 
 .nav-item {
+  font-size: calc(3vmin + 2 * (100vw - 400px) / 400);
   padding: 1.5rem;
   cursor: pointer;
   letter-spacing: 2px;
@@ -393,12 +376,16 @@ ul {
   z-index: 1;
 }
 
-.glitch-text {
-  width: 100%;
+.about-section h1{
   color: var(--main-white);  
-  font-size: 5rem;
-  line-height: 1;
+  font-size: calc(10vmin + 8 * (100vw - 400px) / 400);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.glitch-text {
   position: relative;
+  mix-blend-mode: lighten;
 }
 
 .glitch-text::after,
@@ -410,12 +397,12 @@ ul {
   background: transparent;
   clip: rect(0,0,0,0);
   overflow: hidden;
-  animation: glitch-anim 3s infinite linear alternate-reverse;
+  animation: glitch-anim 5s infinite linear alternate-reverse;
 }
 
 .glitch-text::before {
   left: -1px;
-  text-shadow: 6px 0 var(--main-lightpurple);
+  text-shadow: 4px 0 var(--main-lightpurple);
 }
 
 .glitch-text::after {
